@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>PIG DICE</title>
+</head>
+
+<body>
+    <p>Welcome to playing pig dice<br>ENJOY IT.</p>
+    <h1>PIG DICE RULES<h1>
+            <ol>
+                <li>the game must have two players</li>
+                <li>the two players must take turns to play the game</li>
+                <li>the first player to 100 points wins the game</li>
+                <li>the game ends and the players can restart it</li>
+            </ol>
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 id="name1">player1:</h2>
+                    <input required id="name1" type="text" name="name" value="" placeholder="enter player name">
+                </div>
+                <div class="col-md-6">
+
+                    <h2>player2:</h2>
+                    <input required id="name2" type="text" name="name" value="" placeholder="enter player name">
+                </div>
+            </div>
+
+            <button id="start" type="submit" class="btn btn-outline-success">START</button>
+            </div>
+            <div class="game">
+                <button id="reset" type="submit" class="btn btn-outline-info" onclick="reload()">restart</button>
+
+                <div class="row">
+
+                    <div class="col-md-6" id="bod">
+                        <h3>player1:</h3>
+                        <p id="ply1"></p>
+                        <p>roll1:</p>
+                        <p id="plyr1"></p>
+                        <p>sum1</p>
+                        <p id="Sum1"></p>
+
+                        <p>Score1</p>
+                        <p id="Score1"></p>
+                    </div>
+
+                    <div class="col-md-6" id="box">
+                        <div><img id="img" src="" alt=""></div>
+                        <div class="bt1">
+                            <button type="button" class="btn btn-outline-suceess" onclick="roll1()">roll</button>
+                            <button id="hold1" type="button" class="btn btn-outline-warning">hold</button>
+                        </div>
+                        <div class="bt2">
+                            <button type="button" class="btn btn-outline-success" onclick="roll2()">roll</button>
+                            <button id="hold2" type="button" class="btn btn-outline-warning">hold</button>
+                        </div>
+                    </div>
+                    <div class="col-md-6" id="bos">
+                        <h3>player2:</h3>
+                        <p id="ply2"></p>
+                        <p>roll2:</p>
+                        <p id="plyr2"></p>
+                        <p>Sum2:</p>
+                        <p id="Sum2"></p>
+
+                        <p>score:</p>
+                        <p id="Score2"></p>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+            <div class="congrats">
+                <h1>congrats champ!!!!</h1>
+                <p id="winn"></p>
+                <p id="wins"></p>
+                <p>you won the game</p>
+            </div>
+
+            </div>
+
+
+
+
+
+            <script src="js/jquery-3.3.1.js"></script>
+            <script src="js/scripts.js">
+                < /scripts>
+
+</body>
+
+</html>
