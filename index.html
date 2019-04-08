@@ -3,11 +3,16 @@
 
 <head>
     <meta charset="utf-8">
+    <link href="css/bootsrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 
     <title>PIG DICE</title>
 </head>
 
 <body>
+    <div class="cointainer">
+        <div class="jumbotron">
     <p>Welcome to playing pig dice<br>ENJOY IT.</p>
     <h1>PIG DICE RULES<h1>
             <ol>
@@ -21,11 +26,7 @@
                     <h2 id="name1">player1:</h2>
                     <input required id="name1" type="text" name="name" value="" placeholder="enter player name">
                 </div>
-                <div class="col-md-6">
 
-                    <h2>player2:</h2>
-                    <input required id="name2" type="text" name="name" value="" placeholder="enter player name">
-                </div>
             </div>
 
             <button id="start" type="submit" class="btn btn-outline-success">START</button>
@@ -53,10 +54,12 @@
                             <button type="button" class="btn btn-outline-suceess" onclick="roll1()">roll</button>
                             <button id="hold1" type="button" class="btn btn-outline-warning">hold</button>
                         </div>
-                        <div class="bt2">
-                            <button type="button" class="btn btn-outline-success" onclick="roll2()">roll</button>
-                            <button id="hold2" type="button" class="btn btn-outline-warning">hold</button>
-                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+
+                        <h2>player2:</h2>
+                        <input required id="name2" type="text" name="name" value="" placeholder="enter player name">
                     </div>
                     <div class="col-md-6" id="bos">
                         <h3>player2:</h3>
@@ -69,6 +72,11 @@
                         <p>score:</p>
                         <p id="Score2"></p>
 
+                    </div>
+
+                    <div class="bt2">
+                        <button type="button" class="btn btn-outline-success" onclick="roll2()">roll</button>
+                        <button id="hold2" type="button" class="btn btn-outline-warning">hold</button>
                     </div>
                 </div>
 
